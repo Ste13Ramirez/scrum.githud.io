@@ -1,0 +1,59 @@
+<!-- Ver información de estudiantes--> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión Estudiantil</title>
+  <link rel="stylesheet" href="styles/consulta.css">
+  <link rel="stylesheet" href="styles/comun.css">
+</head>
+<body>
+  <header>
+    <h1>Colegio Rosa de Sarón</h1>
+    <div class="user-profile">
+      <img src="imagenes/ppro.jpg" alt="User Avatar">
+      <span>Maestra Pérez</span>
+    </div>
+  </header>
+  <div class="nav_var">
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+
+        <li class="nav-item">
+          <a href="Registro_calificaciones.html" class="nav-link"></i> Registro de Calificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a href="consulta_estudiantes.html" class="nav-link active"></i> Consulta de Estudiantes</a>
+        </li>
+        <li><a href="tarea.html"class="nav-link">Tarea</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section id="consulta">
+        <h2>Consulta de Estudiantes</h2>
+        <form id="consulta-form">
+          <label for="matricula_consulta">Matrícula:</label>
+          <input type="number" id="matricula_consulta" name="matricula_consulta" required>
+          <button type="submit">Consultar</button>
+        </form>
+        <table id="tabla_estudiantes">
+          <thead>
+            <tr>
+              <th>Matrícula</th>
+              <th>Nombre</th>
+              <th>Tarea</th>
+              <th>Calificación</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="javaScript/script.js"></script>
+  </body>
+  </html>

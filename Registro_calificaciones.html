@@ -1,0 +1,98 @@
+<!-- Calificar asignación--> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión Estudiantil</title>
+  <link rel="stylesheet" href="styles/comun.css">
+</head>
+<body>
+  <header>
+    <h1>Colegio Rosa de Sarón</h1>
+    <div class="user-profile">
+      <img src="imagenes/ppro.jpg" alt="User Avatar">
+      <span>Maestra Pérez</span>
+    </div>
+  </header>
+  <div class="nav_var">
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+
+        <li class="nav-item">
+          <a href="Registro_calificaciones.html" class="nav-link active">Registro de Calificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a href="consulta_estudiantes.html" class="nav-link">Consulta de Estudiantes</a>
+        </li>
+        <li><a href="tarea.html"class="nav-link">Tarea</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <center>
+    <h2>Registro de Notas</h2>
+<form>
+<br>
+<input type="text" name="nomest" id="nomest" placeholder="Nombre y Apellido del Estudiante" size="30">
+<br><br>
+<input type="number" name="matricula" id="matri" placeholder="Matricula">
+<br><br>
+<input type="text" name="materia" id="mate" placeholder="Materia" >
+<br><br>
+<input type="text" name="calificacion" id="cali" placeholder="Calificación">
+
+<br><br>
+
+
+<button type="button" onclick="guardar()">Guardar</button>
+</form>
+</center>
+
+<script type="text/javascript" src="instruccion.js"></script>
+
+<style>
+  #placeholder{
+    font-size: 20px;
+    text-align: center;
+}
+
+#nomest{
+    padding: 6px;
+    font-family: italic;
+    font-size: 15px;
+}
+
+.placeholder{
+    color: red;
+}
+
+#mate{
+    padding: 6px;
+    font-family: italic;
+    font-size: 15px;
+
+}
+
+
+#matri{
+    padding: 6px;
+    font-family: italic;
+    font-size: 15px;
+
+}
+
+
+#cali{
+    padding: 6px;
+    font-family: italic;
+    font-size: 15px;
+
+}
+</style>
+
+
+</body>
+</html>
